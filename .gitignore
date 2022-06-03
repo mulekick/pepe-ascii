@@ -1,0 +1,6 @@
+# exclude node_modules directory
+/node_modules/*
+# exclude eslint config
+.eslint*
+# exclude debug config
+.vscode

@@ -1,0 +1,32 @@
+{
+  "name": "@mulekick/pepe-ascii",
+  "version": "1.0.0",
+  "description": "Exports pepe ASCII art as constants to be used in code.",
+  "type": "module",
+  "main": "pepe-ascii.js",
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 16.13.2",
+    "npm": ">= 8.7.0"
+  },
+  "scripts": {
+    "test": "./scripts/test.script.js scripts/test.file",
+    "prepublishOnly": "npm test && eslint --ext .js --max-warnings 1 --report-unused-disable-directives .",
+    "postpublish": "git add . && git commit -m \"$npm_package_name: version $npm_package_version published on $(date +%F\\ %r)\" && git push -u origin master"
+  },
+  "keywords": [
+    "pepe",
+    "ascii",
+    "monkaS"
+  ],
+  "author": "mulekick <moolekick@gmail.com> (https://github.com/mulekick)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mulekick/pepe-ascii.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mulekick/pepe-ascii/issues"
+  },
+  "homepage": "https://github.com/mulekick/pepe-ascii#readme"
+}
