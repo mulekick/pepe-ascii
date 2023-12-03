@@ -1,3 +1,5 @@
 # exclude everything except unexcludable files (package.json, README.md, LICENSE, main file)
 *
 /*
+# include types
+!pepe-ascii.d.ts

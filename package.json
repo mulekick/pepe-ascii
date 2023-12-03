@@ -1,13 +1,17 @@
 {
     "name": "@mulekick/pepe-ascii",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Exports pepe ASCII art as constants to be used in code.",
     "type": "module",
     "main": "pepe-ascii.js",
+    "types": "pepe-ascii.d.ts",
     "scripts": {
         "test": "./scripts/test.script.js scripts/test.file",
         "prepublishOnly": "npm test && eslint --ext .js --max-warnings 1 --report-unused-disable-directives .",
         "postpublish": "git add . && git commit -m \"$npm_package_name: version $npm_package_version published on $(date +%F\\ %r)\" && git push -u origin master"
+    },
+    "devDependencies": {
+        "@mulekick/eslint-config-muleslint": "^1.0.3"
     },
     "keywords": [
         "pepe",

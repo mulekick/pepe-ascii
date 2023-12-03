@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+// import primitives
+import console from "node:console";
+
 // import modules
 import pepe from "../pepe-ascii.js";
 
@@ -37,7 +40,7 @@ const
 // test existence and type of properties
 for (let i = 0; i < pepes.length; i++) {
     // test property existence
-    if (!Object.prototype.hasOwnProperty.call(pepe, pepes[i]))
+    if (!Object.hasOwn(pepe, pepes[i]))
         // missing property
         throw new Error(`error: ${ pepes[i] } is missing.`);
 
